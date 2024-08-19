@@ -26,4 +26,5 @@ form.addEventListener('submit', (e) =>{
     let jsonAtleta = JSON.stringify(atleta)
 
     console.log(jsonAtleta)
+    console.log(atleta.valueOf())
 })
