@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+* {
+    font-family: "Moderustic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--dark-blue);
+    transition: all .3s ease;
+}
+
+:root {
+    --accent: #FDE74C;
+    --dark-blue: #060D2F;
+    --light: #FFFBFE;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5%;
+}
+
+.inputs {
+    width: 80%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: #FFFBFE;
+}
+
+.inputs>input {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 30px;
+    font-size: 2rem;
+    background-color: white;
+}
+
+label {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: var(--dark-blue);
+}
+
+label::after {
+    content: ":";
+    font-size: large;
+    font-weight: 900;
+    width: 10px;
+}
+
+.register-container{
+    background-color: var(--dark-blue);
+    width: 65vw;
+    height: 70vh;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    overflow-y: scroll;
+}
+
+.contents {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button-container{
+    width: 100%;
+    height: 80px;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container>button {
+    width: 85%;
+    height: 80px;
+    outline: none;
+    border: none;
+    background-color: var(--accent);
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.button-container>button:hover {
+    scale: 1.05;
+}
+
+.button-container>button:active {
+    scale: .9;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}

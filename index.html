@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peneira</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Registro para Peneira</h1>
+    <div class="register-container">
+      <form class="contents">
+        <div class="inputs">
+          <label class="inpt_label_aft" for="nome-do-atleta"
+            >Nome do atleta</label
+          >
+          <input autocomplete="off" required id="nome-do-atleta" type="text" />
+        </div>
+
+        <div class="inputs">
+          <label class="inpt_label_aft" for="rg">RG</label>
+          <input autocomplete="off" required id="rg" type="text" />
+        </div>
+
+        <div class="inputs">
+          <label class="inpt_label_aft" for="cpf">CPF</label>
+          <input autocomplete="off" required id="cpf" type="text" />
+        </div>
+
+        <div class="inputs">
+          <label class="inpt_label_aft" for="data-nascimento"
+            >Data de nascimento</label
+          >
+          <input autocomplete="off" required id="data-nascimento" type="date" />
+        </div>
+
+        <div class="inputs">
+          <label class="inpt_label_aft" for="telefone">Telefone</label>
+          <input autocomplete="off" required id="telefone" type="tel" />
+        </div>
+
+        <div class="inputs">
+          <label class="inpt_label_aft" for="posicao">Posição</label>
+          <input
+            autocomplete="off"
+            required
+            list="posicoes"
+            id="posicao"
+            type="text"
+          />
+          <datalist id="posicoes">
+            <option value="Libero"></option>
+            <option value="Levantador"></option>
+            <option value="Oposto"></option>
+            <option value="Ponteiro"></option>
+            <option value="Central"></option>
+          </datalist>
+        </div>
+
+        <div class="inputs">
+          <label class="inpt_label_aft" for="altura">Altura (cm)</label>
+          <input autocomplete="off" required id="altura" type="number" />
+        </div>
+
+        <div class="inputs">
+          <label class="inpt_label_aft" for="experiencia"
+            >Experiência prévia em times</label
+          >
+          <input
+            autocomplete="off"
+            list="experiencias"
+            id="experiencia"
+            type="text"
+            required
+          />
+          <datalist id="experiencias">
+            <option value="Time federado"></option>
+            <option value="Time local"></option>
+            <option value="Não tem"></option>
+          </datalist>
+        </div>
+
+        <div class="button-container">
+          <button>Registrar</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
